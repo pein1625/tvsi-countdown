@@ -1,0 +1,25 @@
+.header {
+  position: relative;
+  z-index: $zindex-fixed;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__logo {
+    display: inline-flex;
+    margin: 16px 0;
+
+    img {
+      height: 40px;
+    }
+  }
+
+  &__elements {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}

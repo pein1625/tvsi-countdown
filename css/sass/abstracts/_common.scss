@@ -1,0 +1,10 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+
+  &__content {
+    flex-grow: 1;
+  }
+}

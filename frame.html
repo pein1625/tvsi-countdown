@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <!-- Styles-->
+        <link rel="stylesheet" type="text/css" href="./css/libs.css" />
+        <link rel="stylesheet" type="text/css" href="./css/app.css" />
+        <!-- Scripts-->
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/FileSaver.min.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="page">
+            <div class="page__content">
+                <div class="page__body frame">
+                    <div class="row align-items-center justify-content-center g-0 w-100">
+                        <div class="col-sm-5">
+                            <div class="frame__frame">
+                                <div class="frame__img"></div><img class="frame__overlay" src="./images/photo-frame.png" alt="">
+                            </div>
+                            <input class="js-image-value" type="hidden">
+                            <div class="frame__btns">
+                                <button class="frame__btn frame__btn--download js-download-image" type="button">Download photo</button>
+                                <label class="frame__btn frame__btn--upload" for="upload-input">
+                                    <input class="js-input-preview" id="upload-input" type="file" data-target=".frame__img" accept="image/*;capture=camera"><span>Upload photo</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

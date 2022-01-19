@@ -195,11 +195,12 @@
   }
 
   &__btn {
+    @include btn('shine');
     display: none;
     width: 100%;
     font-size: 14px;
     line-height: 20px;
-    background: #3d85c6;
+    background: linear-gradient(to right, #BF0CAA, #02DCFA);
     color: $white;
     text-align: center;
     border-radius: 4px;
@@ -213,7 +214,6 @@
     &:hover {
       color: $white;
       text-decoration: none;
-      background-color: darken(#3d85c6, 10%);
     }
 
     &:disabled {
@@ -241,11 +241,11 @@
     }
 
     &--facebook {
-      background-color: $facebook;
+      background: $facebook;
     }
 
     &--twitter {
-      background-color: $twitter;
+      background: $twitter;
     }
   }
 

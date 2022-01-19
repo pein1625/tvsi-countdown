@@ -1,0 +1,93 @@
+.intro {
+  font-size: 20px;
+  color: $white;
+  position: relative;
+  z-index: 1;
+  text-align: justify;
+
+  &__frame {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-bottom: 150%;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  &__img {
+    display: block;
+    width: 83.3333%;
+    height: 55.5484%;
+    position: absolute;
+    object-fit: cover;
+    left: 8.3333%;
+    top: 22.2272%;
+    object-position: 50% 50%;
+  }
+
+  &__title {
+    font-size: 1.25em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    color: $white;
+    margin-top: 1em;
+
+    a,
+    a:hover {
+      color: $white;
+      font-weight: 700;
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+
+  &__btn {
+    @include btn('shine');
+    display: inline-block;
+    background: linear-gradient(to right, #BF0CAA, #02DCFA);
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: 1399px) {
+    font-size: 16px;
+    max-width: 1054px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 13px;
+    max-width: 872px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 10px;
+  }
+}

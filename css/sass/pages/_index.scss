@@ -37,12 +37,13 @@
 
   &__logo {
     height: 4em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
 
   &__time {
     font-size: 3em;
     font-weight: 700;
+    line-height: 1.4;
   }
 
   &__date {
@@ -56,7 +57,7 @@
     color: #f82fea;
     position: relative;
     z-index: 1;
-    margin-top: 0.7em;
+    margin-top: 0.4em;
 
     &::before {
       content: "";
@@ -72,8 +73,29 @@
   }
 
   &__text {
+    font-size: 0.8em;
     font-weight: 300;
-    margin-top: 0.3em;
+    margin-top: 0.4em;
+  }
+
+  &__btn-wrap {
+    margin-top: 0.4em;
+  }
+
+  &__btn {
+    @include btn('shine');
+    display: inline-block;
+    background: linear-gradient(to right, #BF0CAA, #02DCFA);
+    padding: 0.25em 2.75em;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: 0 1px 5px rgba(#000, 0.15);
+    font-size: 0.75em;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
   }
 
   @media (max-width: 1699px) {

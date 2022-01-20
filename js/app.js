@@ -186,13 +186,13 @@ $(function () {
 
                         let position = {
 
-                            width: 0.833333,
+                            width: 0.813333,
 
-                            height: 0.555484,
+                            height: 0.549444,
 
-                            top: 0.222272,
+                            top: 0.066111,
 
-                            left: 0.083333
+                            left: 0.09
 
                         };
 
